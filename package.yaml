@@ -37,12 +37,13 @@ executables:
     - haskell-rizzoma
 
 tests:
-  haskell-rizzoma-test:
+  unit-test:
     main:                Spec.hs
-    source-dirs:         test
+    source-dirs:         test/unit
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
     - haskell-rizzoma
+    - hspec

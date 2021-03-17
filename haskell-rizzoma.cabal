@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.2.
+-- This file has been generated from package.yaml by hpack version 0.33.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d96aa4cd330b99773b3b1c05624d111fa70ac0db7049f2de1db36789743b80cd
+-- hash: d9ed6d5e0af527ec6b7b0ab05b4a4954952a9e337e6374423d0eab41f425e2ee
 
 name:           haskell-rizzoma
 version:        0.1.0.0
@@ -27,6 +27,7 @@ source-repository head
 
 library
   exposed-modules:
+      Codewars.Triangles
       Lib
   other-modules:
       Paths_haskell_rizzoma
@@ -48,15 +49,17 @@ executable haskell-rizzoma-exe
     , haskell-rizzoma
   default-language: Haskell2010
 
-test-suite haskell-rizzoma-test
+test-suite unit-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Codewars.TrianglesSpec
       Paths_haskell_rizzoma
   hs-source-dirs:
-      test
+      test/unit
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
     , haskell-rizzoma
+    , hspec
   default-language: Haskell2010
