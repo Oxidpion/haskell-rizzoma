@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f1a4f6e264ee37ce15cedd52bfb38071cf19ec178c2be76b8ec3a38c06163162
+-- hash: fe88f236560bef334933325e621a469175191e156ef0d1c27a2551b2545f4f7c
 
 name:           haskell-rizzoma
 version:        0.1.0.0
@@ -32,6 +32,7 @@ library
       Codewars.Isogram
       Codewars.SplitStrings
       Codewars.Triangles
+      Codewars.Tribonacci
       Lib
   other-modules:
       Paths_haskell_rizzoma
@@ -62,6 +63,7 @@ test-suite unit-test
       Codewars.IsogramSpec
       Codewars.SplitStringsSpec
       Codewars.TrianglesSpec
+      Codewars.TribonacciSpec
       Paths_haskell_rizzoma
   hs-source-dirs:
       test/unit
