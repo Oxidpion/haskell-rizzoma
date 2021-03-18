@@ -1,7 +1,7 @@
 module Codewars.TrianglesSpec where
 
 import Codewars.Triangles (isTriangle)
-import Test.Hspec ( describe, it, shouldBe, Spec )
+import Test.Hspec (Spec, describe, it, shouldBe)
 
 spec :: Spec
 spec = do

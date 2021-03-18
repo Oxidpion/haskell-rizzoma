@@ -1,7 +1,7 @@
 module Codewars.DisemvowelSpec where
 
 import Codewars.Disemvowel (disemvowel)
-import Test.Hspec ( it, shouldBe, Spec )
+import Test.Hspec (Spec, it, shouldBe)
 
 spec :: Spec
 spec = do
