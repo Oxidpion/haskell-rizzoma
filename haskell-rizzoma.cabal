@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 34fd5ac60a45a2f002920e364d2f6546e095171030f9b98e1fa15e19d0ae24b6
+-- hash: f1a4f6e264ee37ce15cedd52bfb38071cf19ec178c2be76b8ec3a38c06163162
 
 name:           haskell-rizzoma
 version:        0.1.0.0
@@ -30,6 +30,7 @@ library
       Codewars.Disemvowel
       Codewars.HighestAndLowest
       Codewars.Isogram
+      Codewars.SplitStrings
       Codewars.Triangles
       Lib
   other-modules:
@@ -59,6 +60,7 @@ test-suite unit-test
       Codewars.DisemvowelSpec
       Codewars.HighestAndLowestSpec
       Codewars.IsogramSpec
+      Codewars.SplitStringsSpec
       Codewars.TrianglesSpec
       Paths_haskell_rizzoma
   hs-source-dirs:
