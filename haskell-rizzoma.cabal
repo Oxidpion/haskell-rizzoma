@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e86a60999b2207a3078592b72f904a6851bab86b89610414d475a38b7284fd23
+-- hash: 949f37c86fe392dc1f365d86700171e46dbe0c77b0b5ffbc97ee8ad6e329eec1
 
 name:           haskell-rizzoma
 version:        0.1.0.0
@@ -36,6 +36,7 @@ library
       Codewars.Triangles
       Codewars.Tribonacci
       Lib
+      Tmorris
   other-modules:
       Paths_haskell_rizzoma
   hs-source-dirs:
