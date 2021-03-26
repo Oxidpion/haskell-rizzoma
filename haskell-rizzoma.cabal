@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 949f37c86fe392dc1f365d86700171e46dbe0c77b0b5ffbc97ee8ad6e329eec1
+-- hash: ab1fdee38c7a5c4b25e30b9b755428b20a1aa60f594f71d524fefa127f930990
 
 name:           haskell-rizzoma
 version:        0.1.0.0
@@ -29,6 +29,7 @@ library
   exposed-modules:
       Codewars.Arrays
       Codewars.Disemvowel
+      Codewars.Dubstep
       Codewars.HighestAndLowest
       Codewars.Isogram
       Codewars.SplitStrings
@@ -43,6 +44,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , split
   default-language: Haskell2010
 
 executable haskell-rizzoma-exe
@@ -55,6 +57,7 @@ executable haskell-rizzoma-exe
   build-depends:
       base >=4.7 && <5
     , haskell-rizzoma
+    , split
   default-language: Haskell2010
 
 test-suite unit-test
@@ -63,6 +66,7 @@ test-suite unit-test
   other-modules:
       Codewars.ArraysSpec
       Codewars.DisemvowelSpec
+      Codewars.DubstepSpec
       Codewars.HighestAndLowestSpec
       Codewars.IsogramSpec
       Codewars.SplitStringsSpec
@@ -77,4 +81,5 @@ test-suite unit-test
       base >=4.7 && <5
     , haskell-rizzoma
     , hspec
+    , split
   default-language: Haskell2010
