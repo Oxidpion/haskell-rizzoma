@@ -48,3 +48,4 @@ tests:
     dependencies:
     - haskell-rizzoma
     - hspec
+    - QuickCheck

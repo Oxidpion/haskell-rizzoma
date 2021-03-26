@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ab1fdee38c7a5c4b25e30b9b755428b20a1aa60f594f71d524fefa127f930990
+-- hash: 984f72c9b27392041e2ab91f9c1a41084d690bfc03adddea16b0f4290a08a777
 
 name:           haskell-rizzoma
 version:        0.1.0.0
@@ -33,6 +33,7 @@ library
       Codewars.HighestAndLowest
       Codewars.Isogram
       Codewars.SplitStrings
+      Codewars.Stream
       Codewars.TitleCase
       Codewars.Triangles
       Codewars.Tribonacci
@@ -70,6 +71,7 @@ test-suite unit-test
       Codewars.HighestAndLowestSpec
       Codewars.IsogramSpec
       Codewars.SplitStringsSpec
+      Codewars.StreamSpec
       Codewars.TitleCaseSpec
       Codewars.TrianglesSpec
       Codewars.TribonacciSpec
@@ -78,7 +80,8 @@ test-suite unit-test
       test/unit
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      QuickCheck
+    , base >=4.7 && <5
     , haskell-rizzoma
     , hspec
     , split
