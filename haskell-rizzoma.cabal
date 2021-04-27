@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 794bd3b301d2ed95b9869fe23aa96d9058f053d15ae23053d03591f206e11752
+-- hash: 456fb5e9760fec470f36d774e967c869c30ceb4e79685fac754f860b00b12314
 
 name:           haskell-rizzoma
 version:        0.1.0.0
@@ -34,6 +34,7 @@ library
       Codewars.HighestAndLowest
       Codewars.Isogram
       Codewars.Monads
+      Codewars.ScottEncoding
       Codewars.SplitStrings
       Codewars.Stream
       Codewars.TitleCase
@@ -76,6 +77,7 @@ test-suite unit-test
       Codewars.HighestAndLowestSpec
       Codewars.IsogramSpec
       Codewars.MonadsSpec
+      Codewars.ScottEncodingSpec
       Codewars.SplitStringsSpec
       Codewars.StreamSpec
       Codewars.TitleCaseSpec
